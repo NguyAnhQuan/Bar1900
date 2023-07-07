@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="icon" href="img/lg.png" type="icon/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="login.html">
+    <title>Bar 1900</title>
+</head>
+<body>
+    <div id="notification"></div>
+    <!-- header start -->
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span></span>Bar1900</a>
+        <nav class="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Book">Book</a>
+            <a href="#Packages">Packages</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Review">Review</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+        <div class="icon">
+            <i class="fas fa-search" id="search-btn"></i>
+            <a href="login.html"><i class="fas fa-user" id="login-btn"></i></a>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here....">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!-- header end -->
+
+
+    <!-- home start -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Here where music, drinks and fun are mixed</h3>
+            <p>There will be fond memories here. 
+            Immerse yourself in the lively music space, enjoy exquisite drinks and share the joy with friends. 
+            Come and experience a memorable night at our bar!</p>
+            <button href="#" class="btn"><a href="#">Take a walk together</a></button>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="video/B-ROLL BAR FLEIRING.mp4"></span>
+            <span class="vid-btn" data-src="video/women.mp4"></span>
+            <span class="vid-btn" data-src="video/B-ROLL BAR FLEIRING.mp4"></span>
+            <span class="vid-btn" data-src="video/women.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="video/B-ROLL BAR FLEIRING.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <!-- home ends -->
+    <!-- book starts -->
+
+    <section class="book" id="book">
+
+        <h1 class="heading">
+            <span>B</span>
+            <span>O</span>
+            <span>O</span>
+            <span>K</span>
+            <span class="space"></span>
+            <span>N</span>
+            <span>O</span>
+            <span>W</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="video/booknow.svg" alt="book img">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <h3>Name</h3>
+                    <input type="text" placeholder="What's your name">
+                </div>
+                <div class="inputBox">
+                    <h3>The number of guests</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>choose date</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>Choose time</h3>
+                    <input type="time">
+                </div>
+                <button type="submit" class="Book now" value="" onclick="bookTable()">Book now</button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- book ends -->
+
+    <!-- packages section starts -->
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+            <span>P</span>
+            <span>A</span>
+            <span>C</span>
+            <span>K</span>
+            <span>A</span>
+            <span>G</span>
+            <span>E</span>
+            <span>S</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="img/1099bar1.jpg" alt="table 1">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> VIP table 1 </h3>
+                    <p>VIP table 1 is the table of choice because it offers a beautiful panoramic view, enjoy the fun with your group of friends here, there is unbelievable comfort, lively sound and light.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $19.99 <span>$40.00</span></div>
+                    <button href="#" class="btn">Book now</button>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/1099bar2.jpg" alt=" VIP table 2 ">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> VIP table 2 </h3>
+                    <p>VIP table 1 is the table of choice because it offers a beautiful panoramic view, enjoy the fun with your group of friends here, there is unbelievable comfort, lively sound and light.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far  fa-star"></i>
+                    </div>
+                    <div class="price"> $25.67 <span>$50.00</span></div>
+                    <button href="#" class="btn">Book now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/1099bar3.jpg" alt=" VIP table 3 ">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> VIP table 3 </h3>
+                    <p>VIP table 3 is the table of less choice because it brings your class even though you are in a nightclub, enjoy the fun with your group of friends here with incredible comfort.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> $34.20 <span>$62.00</span></div>
+                    <button href="#" class="btn">Book now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/1099bar4.jpg" alt=" VIP table 4 ">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> VIP table 4 </h3>
+                    <p>Here there is a lively light with luxurious comfortable seats vip 4 highlighting your luxury</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> $51.30 <span>$100.00</span></div>
+                    <button href="#" class="btn">Book now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/1099bar5.jpg" alt=" VIP table 5 ">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> VIP table 5 </h3>
+                    <p>Here, there is a direct view to the DJ with luxurious comfortable seats vip 5 highlighting your luxury</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> $64.12 <span>$120.00</span></div>
+                    <button href="#" class="btn">Book now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/1099bar6.jpg" alt=" VIP table 6 ">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> VIP table 6 </h3>
+                    <p>Sitting here you will feel the extraordinary luxury and refreshment that is the VIP table 6</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> $94.05 <span>$189.00</span></div>
+                    <button href="#" class="btn">Book now</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- packages section ends -->
+
+    <!-- services section stars -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>S</span>
+            <span>E</span>
+            <span>R</span>
+            <span>V</span>
+            <span>I</span>
+            <span>C</span>
+            <span>E</span>
+            <span> S</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-wine-bottle"></i>
+                <h3>Premium Drinks</h3>
+                <p>Enjoy the most premium drinks at our bar! Wines, specialty cocktails, craft beers and wines and many other great drinks will satisfy all your tastes. With excellent quality and taste, we offer a delightful experience for the connoisseur's soul.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>Delicious Food</h3>
+                <p>Our bar not only serves great drinks, but also offers delicious food. The menu is diverse with sandwiches, fresh mannequins and excellent main dishes such as grilled meats and fresh seafood. With excellent quality and taste, we offer a memorable dining experience.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Safty Guide</h3>
+                <p>Safety is a top priority at our bar. We strictly adhere to hygiene standards and take precautions. Our staff has been trained in epidemic prevention and adheres to regulations on social distancing. Create a safe environment for you to relax and enjoy.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-users"></i>
+                <h3>Create Exchanges</h3>
+                <p>Our bar is a great place to socialize and make new connections. We create a friendly, dynamic and quality space where you can connect with others, share interests and have fun conversations. Come and create inspiring experiences at our bar.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- review section start -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>R</span>
+            <span>E</span>
+            <span>V</span>
+            <span>I</span>
+            <span>E</span>
+            <span>W</span>
+        </h1>
+
+        <div class="swiper review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/pic1.jpg" alt="">
+                        <h3>John Deo</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur architecto repellendus iusto atque! Tempore ipsa voluptatem odit eum atque fuga beatae ut a id accusamus eius ducimus, obcaecati amet repudiandae.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/pic2.jpg" alt="">
+                        <h3>John Deo</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur architecto repellendus iusto atque! Tempore ipsa voluptatem odit eum atque fuga beatae ut a id accusamus eius ducimus, obcaecati amet repudiandae.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/pic3.jpg" alt="">
+                        <h3>John Deo</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur architecto repellendus iusto atque! Tempore ipsa voluptatem odit eum atque fuga beatae ut a id accusamus eius ducimus, obcaecati amet repudiandae.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="img/pic4.jpg" alt="">
+                        <h3>John Deo</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur architecto repellendus iusto atque! Tempore ipsa voluptatem odit eum atque fuga beatae ut a id accusamus eius ducimus, obcaecati amet repudiandae.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- brand start -->
+
+    <section class="brand-container">
+
+        <h1> Cooperate With </h1>
+
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/brand1.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/brand2.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/brand3.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/brand4.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/brand5.png" alt=""></div>
+                <div class="swiper-slide"><img src="img/brand6.png" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- brand ends -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, ut dignissimos repudiandae recusandae impedit dolore et natus corrupti ex illum doloribus quisquam, officia non ullam vitae quia a repellendus sit.</p>
+            </div>
+            <div class="box">
+                <h3>Branch locations</h3>
+                <a href="">VietNam</a>
+                <a href="">India</a>
+                <a href="">Usa</a>
+                <a href="">France</a>
+            </div>
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="">Home</a>
+                <a href="">Book</a>
+                <a href="">Packages</a>
+                <a href="">Services</a>
+                <a href="">Review</a>
+            </div>
+            <div class="box">
+                <h3>Follow us</h3>
+                <a href="">FaceBook</a>
+                <a href="">Instagram</a>
+                <a href="">Twitter</a>
+                <a href="">linkedin</a>
+            </div>
+
+        </div>
+        
+        <h1 class="credit"> Created by <span> Nguyen Anh Quan© </span> | all rights reserved! </h1>
+
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
