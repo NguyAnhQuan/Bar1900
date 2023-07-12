@@ -101,3 +101,20 @@ var swiper = new Swiper(".brand-slider", {
   },
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+  var bookLink = document.querySelector('a[href="#book"]');
+  var reviewLink = document.querySelector('a[href="#review"]');
+
+  bookLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    var bookSection = document.getElementById('book');
+    bookSection.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  reviewLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    var reviewSection = document.getElementById('review');
+    reviewSection.scrollIntoView({ behavior: 'smooth' });
+  });
+});

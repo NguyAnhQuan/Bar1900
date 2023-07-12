@@ -27,6 +27,7 @@ html{
     overflow-x: hidden;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
+    
 }
 
 section{
@@ -36,6 +37,7 @@ section{
 .heading{
     text-align: center;
     padding: 2.5rem 0;
+    font-style: normal;
 }
 
 .heading span{
@@ -126,6 +128,8 @@ header.search-bar-container label{
     font-size: 3rem;
     margin-left: 1.5rem;
 }
+
+
 
 header.search-bar-container label:hover{
     color: var(--orange);
@@ -238,7 +242,7 @@ home{
 }
 
 .packages{
-    padding-top: 50px;
+    padding-top: 140px;
     padding-bottom: 50px;
 }
 
@@ -269,6 +273,11 @@ home{
     font-size: 2rem;
     color: #333;
 }
+
+.packages .box-container .box .content h3 a{
+    color: #222;
+}
+
 .packages .box-container .box .content h3 i{
     color: var(--orange);
 }
@@ -294,10 +303,10 @@ home{
 .packages .box-container .box .content button{
     margin-top: 20px;
     color: orange;
+    
 }
 .packages .box-container .box .content button:hover{
     color: #fff;
-    font-size: 2rem;
     transition: 0.3s;
 }
 
@@ -481,6 +490,57 @@ home{
     font-size: 1.5rem;
     padding: .7rem 0;
     color: #eee;
+}
+
+.footer .box-container .box form{
+    padding: 10px 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+}
+
+.footer .box-container .box .social-icons i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #333;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.footer .box-container .box form i{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.footer .box-container .box form .fa-envelope{
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer .box-container .box form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.footer .box-container .box form button .fa-arrow-right{
+    color: #fff;
+}
+
+.footer .box-container .box form input{
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border: 0;
+    outline: none;
 }
 
 .footer .box-container .box a:hover{

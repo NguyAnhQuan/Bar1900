@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root{
+    --orange: #ffa500;
+}
+
 section{
     display: flex;
     justify-content: center;
@@ -19,7 +23,7 @@ section{
 
 @keyframes animateBg{
     100%{
-        filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg); /*animation backgrought*/
     }
 }
 
@@ -131,6 +135,29 @@ button {
 
 .register-link p a:hover {
     text-decoration: underline;
+}
+
+.social-login{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.social-login i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #333;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.social-login i:hover{
+    background: var(--orange);
 }
 
 @media (max-width: 360px){
