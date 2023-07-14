@@ -1,0 +1,9 @@
+.home .home-slider .slide .image img{
+    height: 500px;
+    width: auto;
+    right: 10px;
+}
+
+.home .home-slider .slide .image {
+    flex: 0;
+}

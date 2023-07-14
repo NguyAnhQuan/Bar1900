@@ -16,6 +16,10 @@
     border: none;
 }
 
+.home .home-slider .slide .content button:hover{
+    background: orange;
+}
+
 button{
     margin-top: 1rem;
     display: inline-block;
