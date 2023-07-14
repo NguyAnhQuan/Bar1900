@@ -135,3 +135,29 @@ var swiper = new Swiper(".home-slider", {
   loop:true,
 });
 
+
+// Lắng nghe sự kiện click trên biểu tượng fa-heart
+document.querySelectorAll('.dishes .box-container .box .fas.fa-heart').forEach(function(heart) {
+  heart.addEventListener('click', function() {
+    // Toggle lớp CSS "active" cho biểu tượng
+    this.classList.toggle('active');
+  });
+});
+
+// thông baos đặt món thành công
+document.querySelectorAll('.dishes .box-container .box button').forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Tạo phần tử thông báo
+    var notification = document.createElement('div');
+    notification.classList.add('notification');
+    notification.textContent = '👏You have successfully added the dish, please wait for our service for a while👏';
+
+    // Thêm thông báo vào trang web
+    document.body.appendChild(notification);
+
+    // Xóa thông báo sau 3 giây
+    setTimeout(function() {
+      notification.remove();
+    }, 4000);
+  });
+});
