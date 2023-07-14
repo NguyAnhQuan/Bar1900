@@ -1,0 +1,65 @@
+
+section:nth-child(even){
+    background: #eee;
+}
+
+.home .home-slider .slide .content button{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: darkslategrey;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    border: none;
+}
+
+button:hover{
+    background: orange;
+}
+
+.home-slider{
+    overflow-x: hidden;
+}
+
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
+}
+
+.home .home-slider .slide .content{
+    flex:1 1 45rem;
+    text-align:left;
+}
+
+.home .home-slider .slide .image{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+    width: 100%;
+}
+
+.home .home-slider .slide .content span{
+    color: orange;
+    font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3{
+    color: black;
+    font-size: 7rem;
+}
+
+.home .home-slider .slide .content p{
+    color: #666 ;
+    font-size: 2.2rem;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+
+

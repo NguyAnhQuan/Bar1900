@@ -514,6 +514,11 @@ home{
     cursor: pointer;
 }
 
+
+.footer .box-container .box .social-icons i:hover{
+    background: var(--orange);
+}
+
 .footer .box-container .box form i{
     font-size: 18px;
     margin-right: 10px;
