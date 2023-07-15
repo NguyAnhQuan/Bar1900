@@ -566,22 +566,30 @@ home{
 .footer .credit span{
     color:var(--orange);
 }
-
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 120px 80px 100px ;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
+.container label {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.container input,
+.container select,
+.container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.container input[type="submit"] {
   background-color: darkslategrey;
   color: white;
   padding: 12px 20px;
@@ -590,25 +598,10 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+.container input[type="submit"]:hover {
   background-color: orange;
 }
 
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 130px 10% 130px;
-}
-
-.container label{
-    font-size: 15px;
-}
-
-.container .input{
-    align-items: center;
-}
 /* style thong bao */
 
  
@@ -696,3 +689,8 @@ input[type=submit]:hover {
     }
 }
 /* media end */
+
+mark {
+    background-color:orange;
+  }
+  

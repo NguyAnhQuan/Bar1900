@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/lg.png" type="icon/png"><!-- logo -->
     <link rel='stylesheet' href="../style.css">
+    <link rel='stylesheet' href="../css/contact.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Food</title>
@@ -13,6 +14,20 @@
     <!-- header start -->
 
     <header>
+        <div class="area">
+            <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            </ul>
+        </div>
 
         <div id="menu-bar" class="fas fa-bars"></div>
 
@@ -40,7 +55,11 @@
     <!-- concact starts -->
     
     <div class="container">
-        <form action="action_page.php">
+        <form id="contact-form" 
+        action="https://mail.google.com/mail/u/0/#inbox?compose=new">
+
+            <label for="fname">ID Email</label>
+            <input type="email" id="fname" name="firstname" placeholder="Your id email..">
 
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -51,11 +70,11 @@
             <label for="country">Country</label>
             <select id="country" name="country">
 
-               <option value="VietNam">VietNam</option>
-               <option value="australia">Australia</option>
-               <option value="canada">Canada</option>
-               <option value="usa">USA</option>
-               
+            <option value="VietNam">VietNam</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            
             </select>
 
             <label for="subject">Subject</label>
@@ -69,7 +88,52 @@
     </div>
     <!-- concact ends -->
 
-        
+    <div class="contact-more">
+        <div class="contact-map" data-aos="fade-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2501.8091341304907!2d105.85099150898071!3d21.035572749066034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abbf5c6e7ce3%3A0xcfa017611623993c!2zMTkwMCBMZSBUaMOpw6J0cmU!5e1!3m2!1svi!2s!4v1689385807729!5m2!1svi!2s" 
+            width="850" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+        <div class="contact-info" data-aos="fade-left" style="background-color: #72634f">
+        <h2 class="contact-title">Info contact</h2>
+        <div class="contact-info_body">
+            <div class="contact-item">
+            <div class="contact-item_name">Time</div>
+            <div class="contact-item_desc">20h30 - 23h00 / Mon - Sun</div>
+            </div>
+            <div class="contact-item">
+            <div class="contact-item_name">Address</div>
+            <div class="contact-item_desc">
+                8B Phố Tạ Hiện, Hàng Buồm, Hoàn Kiếm, Hà Nội, Việt Nam.
+            </div>
+            </div>
+            <div class="contact-item">
+            <div class="contact-item_name">Phone</div>
+            <div class="contact-item_desc">1800 9999</div>
+            </div>
+            <div class="contact-item">
+            <div class="contact-item_name">Email</div>
+            <div class="contact-item_desc">20220844@eaut.edu.vn</div>
+            </div>
+        </div>
+        <div class="contact-info_social">
+            <a href="" class="social-item facebook">
+            <i class="fa fas-facebook"></i>
+            </a>
+            <a href="" class="social-item instagram">
+            <i class="bx bxl-instagram-alt"></i>
+            </a>
+            <a href="" class="social-item twitter">
+            <i class="bx bxl-twitter"></i>
+            </a>
+        </div>
+        </div>
+    </div>        
 
 
 
@@ -123,8 +187,12 @@
     </section>
 
     
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="../script.js"></script>
+    <script src="../js/contact.js"></script>
     <!-- footer ends -->
+
 </body>
 </html>
