@@ -41,3 +41,25 @@ function sendEmail(event) {
   });
   
 
+
+//FAQ
+// Lấy tất cả các nút trong phần FAQ
+const items = document.querySelectorAll('.accordion button');
+
+function toggleAccordion() {
+    // Kiểm tra trạng thái hiện tại của câu hỏi đã được mở rộng hay chưa
+    const itemToggle = this.getAttribute('aria-expanded');
+    // Đặt thuộc tính aria-expanded của tất cả các câu hỏi về false (thu gọn tất cả các câu hỏi)
+    for (let i = 0; i < items.length; i++) {
+        items[i].setAttribute('aria-expanded', 'false');
+    }
+
+    // Nếu câu hỏi chưa được mở rộng, đặt thuộc tính aria-expanded của câu hỏi hiện tại về true (mở rộng câu hỏi này)
+    if (itemToggle === 'false') {
+        this.setAttribute('aria-expanded', 'true');
+    }
+}
+
+// Thêm sự kiện click cho từng câu hỏi
+items.forEach((item) => item.addEventListener('click', toggleAccordion));
+
