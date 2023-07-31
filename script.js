@@ -3,23 +3,30 @@ let searchBar = document.querySelector('.search-bar-container');
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 
-window.onscroll = () =>{
-    searchBtn.classList.remove('fa-time')
+
+// khi bấm shearch nhưng cuộn trang thì sẽ mất
+window.onscroll = () =>{    
     searchBar.classList.remove('active')
 };
 
+
+//khi ở trạng thái mobile bấm nút sẽ hiện ra menu
 menu.addEventListener('click', () =>{
-    searchBtn.classList.remove('fa-time')
-    searchBar.classList.remove('active')
-    menu.classList.toggle('fa-time')
     navbar.classList.toggle('active')
 });
 
+
+// hiện div shearch
 searchBtn.addEventListener('click', () =>{
     searchBtn.classList.toggle('fa-time')
     searchBar.classList.toggle('active')
 });
 
+
+
+
+
+// video demo
 const videoSlider = document.getElementById('video-slider');
 const vidBtns = document.querySelectorAll('.vid-btn');
 
@@ -31,37 +38,34 @@ vidBtns.forEach((btn) => {
     // Thay đổi video
     videoSlider.src = videoSrc;
 
-    // Xóa lớp active khỏi tất cả các nút
-    vidBtns.forEach((btn) => {
-      btn.classList.remove('active');
-    });
-
-    // Thêm lớp active vào nút được nhấp chuột
-    btn.classList.add('active');
   });
 });
 
+
+
+
 // random số bàn
 function bookTable() {
-    // Tạo số bàn ngẫu nhiên từ 1 đến 10
-    const tableNumber = Math.floor(Math.random() * 10) + 1;
-  
-    // Tạo một chữ cái viết hoa ngẫu nhiên
-    const randomChar = String.fromCharCode(65 + Math.floor(Math.random() * 26));
-  
-    // Hiển thị thông báo với số bàn ngẫu nhiên và chữ cái viết hoa ngẫu nhiên
-    alert(`You have successfully booked your table: 
-    Your table number is ${tableNumber}${randomChar} 
-    Good luck with this experience 🥂`);
-  }
+  // Tạo số bàn ngẫu nhiên từ 1 đến 10
+  const tableNumber = Math.floor(Math.random() * 10) + 1;
+
+  // Tạo một chữ cái viết hoa ngẫu nhiên
+  const randomChar = String.fromCharCode(65 + Math.floor(Math.random() * 26));
+
+  // Hiển thị thông báo với số bàn ngẫu nhiên và chữ cái viết hoa ngẫu nhiên
+  alert(`You have successfully booked your table: 
+  Your table number is ${tableNumber}${randomChar} 
+  Good luck with this experience 🥂`);
+}
+
 
 // slide review
 var swiper = new Swiper(".review-slider", {
   spaceBetween: 20,
-  loop: true,
+  loop: true,// lặp vô hạn
   autoplay:{
-    delay: 2500,
-    disableOnInteraction:false,
+    delay: 2500,//2,5s
+    disableOnInteraction:false,//Không tắt tự động chuyển slide khi người dùng tương tác 
   },
   breakpoints:{
     640:{
@@ -101,26 +105,26 @@ var swiper = new Swiper(".brand-slider", {
   },
 });
 
-
+//shot link
 document.addEventListener('DOMContentLoaded', function () {
   var bookLink = document.querySelector('a[href="#book"]');
   var reviewLink = document.querySelector('a[href="#review"]');
 
   bookLink.addEventListener('click', function (event) {
-    event.preventDefault();
+    event.preventDefault();// ngăn web nhảy lên đầu
     var bookSection = document.getElementById('book');
-    bookSection.scrollIntoView({ behavior: 'smooth' });
+    bookSection.scrollIntoView({ behavior: 'smooth' });// cuộn đến
   });
 
   reviewLink.addEventListener('click', function (event) {
-    event.preventDefault();
+    event.preventDefault();// ngăn web nhảy lên đầu
     var reviewSection = document.getElementById('review');
     reviewSection.scrollIntoView({ behavior: 'smooth' });
   });
 });
 
 
-//food
+//food top
 var swiper = new Swiper(".home-slider", {
   spaceBetween: 30,
   centeredSlides: true,
@@ -136,6 +140,8 @@ var swiper = new Swiper(".home-slider", {
 });
 
 
+
+//tym yêu thích đồ uống
 // Lắng nghe sự kiện click trên biểu tượng fa-heart
 document.querySelectorAll('.dishes .box-container .box .fas.fa-heart').forEach(function(heart) {
   heart.addEventListener('click', function() {
@@ -143,6 +149,8 @@ document.querySelectorAll('.dishes .box-container .box .fas.fa-heart').forEach(f
     this.classList.toggle('active');
   });
 });
+
+
 
 // thông baos đặt món thành công
 document.querySelectorAll('.dishes .box-container .box button').forEach(function(button) {
@@ -155,7 +163,7 @@ document.querySelectorAll('.dishes .box-container .box button').forEach(function
     // Thêm thông báo vào trang web
     document.body.appendChild(notification);
 
-    // Xóa thông báo sau 3 giây
+    // Xóa thông báo sau 4 giây
     setTimeout(function() {
       notification.remove();
     }, 4000);
@@ -164,26 +172,30 @@ document.querySelectorAll('.dishes .box-container .box button').forEach(function
 
 
 // pure image zoom
-const zoomer = document.querySelector(".swiper-slide");
-const wrapImg = document.querySelector(".swiper-slide .image");
-const result = document.querySelector(".swiper-slide .result");
-const size = 3;
+// const zoomer = document.querySelector(".swiper-slide");
+// const wrapImg = document.querySelector(".swiper-slide .image");
+// const result = document.querySelector(".swiper-slide .result");
+// const size = 3;
 
-wrapImg.addEventListener("mousemove", function (e) {
-result.classList.remove('hide')
+// wrapImg.addEventListener("mousemove", function (e) {
+// result.classList.remove('hide')
 
-const img = wrapImg.querySelector("img");
-let x = (e.offsetX / this.offsetWidth) * 100;
-let y = (e.offsetY / this.offsetHeight) * 100;
+// const img = wrapImg.querySelector("img");
+// let x = (e.offsetX / this.offsetWidth) * 100;
+// let y = (e.offsetY / this.offsetHeight) * 100;
 
-// move result
-let posX = e.pageX - zoomer.offsetLeft;
-let posY = e.pageY - zoomer.offsetTop;
-result.style.cssText = `
-            background-image: url(${img.src});
-            background-size: ${img.width * size}px ${img.height * size}px;
-            background-position : ${x}% ${y}%;
-            left: ${posX - 100}px;
-            top: ${posY - 100}px;
-        `;
-});
+// // move result
+// let posX = e.pageX - zoomer.offsetLeft;
+// let posY = e.pageY - zoomer.offsetTop;
+// result.style.cssText = `
+//             background-image: url(${img.src});
+//             background-size: ${img.width * size}px ${img.height * size}px;
+//             background-position : ${x}% ${y}%;
+//             left: ${posX - 100}px;
+//             top: ${posY - 100}px;
+//         `;
+// });
+
+
+//dark mode 2024
+
