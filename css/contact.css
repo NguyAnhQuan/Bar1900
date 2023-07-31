@@ -209,6 +209,7 @@
     font-size: 20px;
 }
 
+
 .accordion .accordion-item .accordion-content p{
     font-size: 15px;
 }
@@ -231,6 +232,7 @@
 
 .accordion button:hover{
     color: #03b5d2;
+    /* cursor: pointer; */
 }
 
 /* Hide the plus/minus sign when not expanded */
