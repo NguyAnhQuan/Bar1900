@@ -32,6 +32,15 @@ const vidBtns = document.querySelectorAll('.vid-btn');
 
 vidBtns.forEach((btn) => {
   btn.addEventListener('click', () => {
+    
+    // Loại bỏ lớp "active" màu nút từ tất cả các nút
+    vidBtns.forEach((otherBtn) => {
+      otherBtn.classList.remove('active');
+    });
+
+    // Thêm lớp "active" lớp màu vào nút bấm
+    btn.classList.add('active');
+
     // Lấy đường dẫn video từ thuộc tính data-src
     const videoSrc = btn.getAttribute('data-src');
 

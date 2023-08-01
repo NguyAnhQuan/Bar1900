@@ -172,6 +172,10 @@ home{
     padding: .5rem 0;
 }
 
+.home .content a:hover{
+    color: #333;
+}
+
 .home .video-container video{
     position: absolute;
     top: 0;
@@ -306,7 +310,7 @@ home{
     
 }
 .packages .box-container .box .content button:hover{
-    color: #fff;
+    color: #333;
     transition: 0.3s;
 }
 
