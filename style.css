@@ -95,7 +95,7 @@ header .icon i:hover{
     color: var(--orange);
 }
 
-header .search-bar-container{
+header  .search-bar-container{
     position: absolute;
     top: 100%;
     left: 0;
@@ -113,16 +113,16 @@ header .search-bar-container.active{
     clip-path: polygon(0 0, 100% 0, 100% 100%,0 100%);
 }
 
-header.search-bar-container #search-bar{
+header .search-bar-container input{
     width: 100%;
     padding: 1rem;
     text-transform: none;
     color: #333;
     font-size: 1.7rem;
-    border-radius: -5rem;
+    border-radius: .5rem;
 }
 
-header.search-bar-container label{
+header .search-bar-container label{
     color: #fff;
     cursor: pointer;
     font-size: 3rem;
